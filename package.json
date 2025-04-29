@@ -1,17 +1,27 @@
 {
-  "name": "jobs",
+  "name": "npm",
   "version": "1.0.0",
-  "description": "",
+  "description": "npm install npm install express",
+  "keywords": [],
+  "homepage": "https://github.com/KeenGWatanabe/taskmgr#readme",
+  "bugs": {
+    "url": "https://github.com/KeenGWatanabe/taskmgr/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KeenGWatanabe/taskmgr.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "express": "^4.18.2",
+    "express": "^4.21.2",
+    "mongodb": "^6.16.0",
     "mongoose": "^5.13.16",
     "vercel": "^28.17.0"
   },
