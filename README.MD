@@ -2,9 +2,16 @@
 npm install
 npm install express
 npm install mongodb
+npm install mongoose
+npm install dotenv
 
 # setting up mongoDB
 https://www.mongodb.com/docs/atlas/getting-started/#overview
+
+acct: techupz
+cluster: tasks
+user:user
+pw:**** 
 
 In order to run the project, setup .env and set MONGO_URI variable equal to DB connection string.
 
