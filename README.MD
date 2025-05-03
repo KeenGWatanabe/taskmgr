@@ -1,5 +1,4 @@
-## Project Setup
-npm install
+## install dependencies
 npm install express
 npm install mongodb
 npm install mongoose
