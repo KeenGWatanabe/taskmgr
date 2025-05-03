@@ -8,7 +8,8 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Install dependencies (including devDependencies if needed)
-RUN npm install
+# safter than `RUN npm install`
+RUN npm ci --only=production
 
 # Copy the rest of the app (excluding files in .dockerignore)
 COPY . .
@@ -20,4 +21,4 @@ COPY .env .
 EXPOSE 5000
 
 # Command to run the app (matches your npm start script)
-CMD ["nodemon", "start"]
+CMD ["node", "app.js"]

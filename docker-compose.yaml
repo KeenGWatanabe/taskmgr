@@ -1,0 +1,8 @@
+# In docker-compose.yml
+services:
+  app:
+    secrets:
+      - mongodb_uri
+secrets:
+  mongodb_uri:
+    file: ./secrets/mongodb+srv://user:1234@tasks.hqybvw0.mongodb.net/?retryWrites=true&w=majority&appName=tasks.txt  # Store your URI here
