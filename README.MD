@@ -9,9 +9,10 @@ npm install dotenv
 https://www.mongodb.com/docs/atlas/getting-started/#overview
 
 acct: techupz
-cluster: tasks
+cluster: dbName.tasks
 user:user
 pw:**** 
+
 
 In order to run the project, setup .env and set MONGO_URI variable equal to DB connection string.
 
