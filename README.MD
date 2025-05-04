@@ -39,12 +39,9 @@ In order to avoid port collisions, in the source code port value is 5000
 # mount .env at Runtime (local development)
 docker run --env-file .env rger/taskmgr:1.0
 
-Option 3: Use Docker Secrets (For production)
+`Option 3: Use Docker Secrets (For production)`
 For sensitive data (e.g., passwords):
-
-# Docker build section
-https://docs.google.com/document/d/1nKWSwNt2JzdG-5UwIrl2soDj6eN1lFAzYLDizgt6nLI/edit?tab=t.0#heading=h.b3tpimhbolud
-
+```
 yaml
 # In docker-compose.yml
 services:
@@ -54,6 +51,12 @@ services:
 secrets:
   mongodb_uri:
     file: ./secrets/mongodb_uri.txt  # Store your URI here
+```
+`Option 3: Use Docker Secrets (For production)`
+
+# Docker build section
+https://docs.google.com/document/d/1nKWSwNt2JzdG-5UwIrl2soDj6eN1lFAzYLDizgt6nLI/edit?tab=t.0#heading=h.b3tpimhbolud
+
 
  # pushing image steps (start docker desktop first in background)
  docker --version
@@ -66,3 +69,9 @@ docker-compose down; docker-compose up --build (powershell)
 
 # verify success
 app-1  | Server running on port 5000
+
+# pushing image to aws ECR 
+follow step 1 to 4 of this google docs
+https://docs.google.com/document/d/167Vqst1JtidQNDjlkAv4NlE8S5icXPRz3b0y7OQ6f2c/edit?tab=t.0
+
+# next got to G4infra repo to setup ECS
