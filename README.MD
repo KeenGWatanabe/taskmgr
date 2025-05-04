@@ -42,6 +42,9 @@ docker run --env-file .env rger/taskmgr:1.0
 Option 3: Use Docker Secrets (For production)
 For sensitive data (e.g., passwords):
 
+# Docker build section
+https://docs.google.com/document/d/1nKWSwNt2JzdG-5UwIrl2soDj6eN1lFAzYLDizgt6nLI/edit?tab=t.0#heading=h.b3tpimhbolud
+
 yaml
 # In docker-compose.yml
 services:
