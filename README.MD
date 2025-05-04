@@ -52,4 +52,14 @@ secrets:
   mongodb_uri:
     file: ./secrets/mongodb_uri.txt  # Store your URI here
 
-    
+ # pushing image steps (start docker desktop first in background)
+ docker --version
+ systemctl start docker (skip for powershell)
+
+ docker-compose up --build
+
+docker-compose down && docker-compose up --build (linux)
+docker-compose down; docker-compose up --build (powershell)
+
+# verify success
+app-1  | Server running on port 5000
