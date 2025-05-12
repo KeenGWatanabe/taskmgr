@@ -62,9 +62,10 @@ https://docs.google.com/document/d/1nKWSwNt2JzdG-5UwIrl2soDj6eN1lFAzYLDizgt6nLI/
  docker --version
  systemctl start docker (skip for powershell)
 
- docker-compose up --build
 
-docker-compose down && docker-compose up --build (linux)
+ sudo docker-compose up --build
+
+sudo docker-compose down && docker-compose up --build (linux)
 docker-compose down; docker-compose up --build (powershell)
 
 # verify success
@@ -73,5 +74,13 @@ app-1  | Server running on port 5000
 # pushing image to aws ECR 
 follow step 1 to 4 of this google docs
 https://docs.google.com/document/d/167Vqst1JtidQNDjlkAv4NlE8S5icXPRz3b0y7OQ6f2c/edit?tab=t.0
+
+
+aws configure list
+
+# run this to log Docker into ECR
+aws ecr get-login-password --region us-east-1 | sudo docker login --username AWS --password-stdin 255945442255.dkr.ecr.us-east-1.amazonaws.com
+# retry Docker push
+sudo docker push 255945442255.dkr.ecr.us-east-1.amazonaws.com/nodejs-app:latest
 
 # next got to G4infra repo to setup ECS
