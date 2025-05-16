@@ -36,7 +36,8 @@ ip address anywhere and whitelist for private access
 
 
 In order to avoid port collisions, in the source code port value is 5000
-# mount .env at Runtime (local development)
+
+# (optional)mount .env at Runtime (local development)
 docker run --env-file .env rger/taskmgr:1.0
 
 `Option 3: Use Docker Secrets (For production)`
@@ -83,4 +84,4 @@ aws ecr get-login-password --region us-east-1 | sudo docker login --username AWS
 # retry Docker push
 sudo docker push 255945442255.dkr.ecr.us-east-1.amazonaws.com/nodejs-app:latest
 
-# next got to G4infra repo to setup ECS
+# run ECS.tf (G4infra) before pushing images to it
