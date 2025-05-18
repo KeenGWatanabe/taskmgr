@@ -76,8 +76,14 @@ app-1  | Server running on port 5000
 follow step 1 to 4 of this google docs
 https://docs.google.com/document/d/167Vqst1JtidQNDjlkAv4NlE8S5icXPRz3b0y7OQ6f2c/edit?tab=t.0
 
+OR
 
-aws configure list
+aws console, search `Elastic Container Registry`
+>Private registry>Repositories>Create private repository><name> / Mutable / AES-256 > Create
+
+View push commands > generate image ID for ECS or EKS
+
+
 
 # run this to log Docker into ECR
 aws ecr get-login-password --region us-east-1 | sudo docker login --username AWS --password-stdin 255945442255.dkr.ecr.us-east-1.amazonaws.com
