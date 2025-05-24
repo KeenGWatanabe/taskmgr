@@ -64,7 +64,7 @@ https://docs.google.com/document/d/1nKWSwNt2JzdG-5UwIrl2soDj6eN1lFAzYLDizgt6nLI/
  systemctl start docker (skip for powershell)
 
 
- sudo docker-compose up --build
+ sudo docker compose up --build
 
 sudo docker-compose down && docker-compose up --build (linux)
 docker-compose down; docker-compose up --build (powershell)
