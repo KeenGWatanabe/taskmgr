@@ -92,11 +92,18 @@ sudo docker push 255945442255.dkr.ecr.us-east-1.amazonaws.com/nodejs-app:latest
 
 # run ECS.tf (G4infra) before pushing images to it
 
+############### image from Docker Hub ###############3
 # login to Docker Hub
 startup Docker desktop (Windows) 
+sudo systemctl start docker (Linux)
 
 # Use Docker Hub
 docker login -u rger
+
+# Build your image locally
+docker build -t taskmgr-pte-repo:latest .
+
 # Tag and Push to Docker Hub:
 docker tag taskmgr-pte-repo:latest rger/taskmgr-pte-repo:latest
+
 docker push rger/taskmgr-pte-repo:latest
