@@ -91,3 +91,12 @@ aws ecr get-login-password --region us-east-1 | sudo docker login --username AWS
 sudo docker push 255945442255.dkr.ecr.us-east-1.amazonaws.com/nodejs-app:latest
 
 # run ECS.tf (G4infra) before pushing images to it
+
+# login to Docker Hub
+startup Docker desktop (Windows) 
+
+# Use Docker Hub
+docker login -u rger
+# Tag and Push to Docker Hub:
+docker tag taskmgr-pte-repo:latest rger/taskmgr-pte-repo:latest
+docker push rger/taskmgr-pte-repo:latest
