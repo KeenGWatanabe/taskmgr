@@ -94,10 +94,12 @@ sudo docker push 255945442255.dkr.ecr.us-east-1.amazonaws.com/nodejs-app:latest
 
 ############### image from Docker Hub ###############3
 # login to Docker Hub
-startup Docker desktop (Windows) 
-sudo systemctl start docker (Linux)
+(Windows)
+startup Docker desktop
+(Linux)
+sudo systemctl start docker 
 
-# Use Docker Hub
+# Use Docker Hub (PAT)
 docker login -u rger
 
 # Build your image locally
