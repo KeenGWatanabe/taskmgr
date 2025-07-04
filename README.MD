@@ -109,3 +109,6 @@ docker build -t taskmgr-pte-repo:latest .
 docker tag taskmgr-pte-repo:latest rger/taskmgr-pte-repo:latest
 
 docker push rger/taskmgr-pte-repo:latest
+
+# run app locally
+docker run -e MONGODB_URI=mongodb://host.docker.internal:27017/taskmgr -p 3000:3000 rger/taskmgr-pte-repo:latest
