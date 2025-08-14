@@ -7,6 +7,10 @@ npm install mongodb
 npm install mongoose
 npm install dotenv
 
+# run app
+```bash
+nodemon start
+```
 # setting up mongoDB
 https://www.mongodb.com/docs/atlas/getting-started/#overview
 
