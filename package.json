@@ -16,7 +16,7 @@
   "type": "commonjs",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "nodemon start"
   },
   "dependencies": {
     "dotenv": "^8.6.0",
